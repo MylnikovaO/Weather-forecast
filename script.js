@@ -6,7 +6,7 @@ SelectDefault();
 
 function f1() {
     let val = document.querySelector('.container__inner__select').value;
-    fetch('http://api.openweathermap.org/data/2.5/weather?id=' + `${val}` + '&appid=667d5500475a36c5dde9689bfc79df2e')
+    fetch('https://api.openweathermap.org/data/2.5/weather?id=' + `${val}` + '&appid=667d5500475a36c5dde9689bfc79df2e')
         .then(function (resp) { return resp.json() })
         .then(function (data) {
             console.log(data)
